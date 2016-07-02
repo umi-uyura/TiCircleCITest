@@ -1,5 +1,8 @@
 machine:
   timezone: Asia/Tokyo
+  environment:
+    XCODE_SCHEME: TiCircleCITest
+    XCODE_PROJECT: TiCircleCITest.xcodeproj
 
 dependencies:
   pre:
