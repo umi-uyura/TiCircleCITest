@@ -3,16 +3,19 @@ machine:
   environment:
     XCODE_SCHEME: TiCircleCITest
     XCODE_PROJECT: TiCircleCITest.xcodeproj
+  xcode:
+    version: 7.3
 
 dependencies:
   pre:
     - brew install n
     - n 4.4.5
     - npm install -g titanium tisdk
-    - tisdk build 5.3.0.GA
+    - tisdk install 5.2.2.GA
 
 test:
   override:
     - echo Hello World
     - which node
     - which ti
+    - ti info
