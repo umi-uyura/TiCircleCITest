@@ -1,3 +1,8 @@
+machine:
+  node:
+    version: 4.4.5
+  timezone: Asia/Tokyo
+
 test:
   override:
     - echo Hello World
