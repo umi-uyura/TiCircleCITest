@@ -9,6 +9,7 @@ dependencies:
     - brew install n
     - n 4.4.5
     - npm install -g titanium tisdk
+    - ti sdk install 4.0.0.GA
     - tisdk build 5.2.2.GA --force
 
 test:
