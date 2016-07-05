@@ -6,7 +6,7 @@ machine:
 
 dependencies:
   pre:
-    - brew install n scons
+    - brew install n scons android-sdk
     - n 4.4.5
     - npm install -g titanium tisdk
     - tisdk build 5.2.2.GA --force
