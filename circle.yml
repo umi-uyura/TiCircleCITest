@@ -3,6 +3,7 @@ machine:
   environment:
     XCODE_SCHEME: TiCircleCITest
     XCODE_PROJECT: TiCircleCITest.xcodeproj
+    ANDROID_HOME: /usr/local/opt/android-sdk
 
 dependencies:
   pre:
