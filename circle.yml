@@ -3,8 +3,6 @@ machine:
   environment:
     XCODE_SCHEME: TiCircleCITest
     XCODE_PROJECT: TiCircleCITest.xcodeproj
-  xcode:
-    version: 7.3
 
 dependencies:
   pre:
@@ -19,3 +17,4 @@ test:
     - which node
     - which ti
     - ti info
+    - ti build -p ios -b
