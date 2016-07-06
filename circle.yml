@@ -16,14 +16,16 @@ dependencies:
     - brew install n scons android-sdk android-ndk
     - brew tap caskroom/cask
     - brew cask install java
+    - echo $JAVA_HOME
+    - java -version
+    - which ndk-build
     - n 4.4.5
     - npm install -g titanium tisdk
-    - tisdk build 5.2.2.GA --force
+#    - tisdk build 5.2.2.GA --force
 
 test:
   override:
     - echo Hello World
-    - echo $JAVA_HOME
     - which node
     - which ti
     - ti info
