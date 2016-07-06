@@ -18,6 +18,10 @@ dependencies:
     - brew cask install java
     - echo $JAVA_HOME
     - java -version
+    - ls $ANDROID_SDK
+    - ls $ANDROID_NDK
+    - ls $ANDROID_PLATFORM
+    - ls $GOOGLE_APIS
     - which android
     - which ndk-build
     - n 4.4.5
