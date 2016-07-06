@@ -21,6 +21,7 @@ dependencies:
 test:
   override:
     - echo Hello World
+    - echo $JAVA_HOME
     - which node
     - which ti
     - ti info
