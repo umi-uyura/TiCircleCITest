@@ -8,12 +8,14 @@ machine:
     ANDROID_NDK: /usr/local/opt/android-ndk
     ANDROID_PLATFORM: /usr/local/opt/android-sdk/platforms/android-23
     GOOGLE_APIS: /usr/local/opt/android-sdk/add-ons/addon-google_apis-google-23
-    JAVA_HOME: $(/usr/libexec/java_home -v 1.6)
+    JAVA_HOME: $(/usr/libexec/java_home -v 1.8)
     PATH: /usr/local/opt/android-sdk/tools:/usr/local/opt/android-sdk/platform-tools:$JAVA_HOME/bin:$PATH
 
 dependencies:
   pre:
     - brew install n scons android-sdk android-ndk
+    - brew tap caskroom/cask
+    - brew cask install java
     - n 4.4.5
     - npm install -g titanium tisdk
     - tisdk build 5.2.2.GA --force
