@@ -18,6 +18,7 @@ dependencies:
     - brew cask install java
     - echo $JAVA_HOME
     - java -version
+    - which android
     - which ndk-build
     - n 4.4.5
     - npm install -g titanium tisdk
