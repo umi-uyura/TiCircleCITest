@@ -27,7 +27,7 @@ dependencies:
     - which ndk-build
     - n 4.4.5
     - npm install -g titanium tisdk
-#    - tisdk build 5.2.2.GA --force
+    - tisdk build 5.2.2.GA --force
 
 test:
   override:
