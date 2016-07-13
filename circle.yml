@@ -16,7 +16,7 @@ dependencies:
     - brew tap caskroom/cask
     - brew cask install java
     - brew install n scons android-sdk android-ndk
-    - android sdk update -u -a
+    - android update sdk -u -a
     - echo $JAVA_HOME
     - java -version
     - ls $ANDROID_SDK
