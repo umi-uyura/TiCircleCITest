@@ -16,7 +16,7 @@ dependencies:
     - brew tap caskroom/cask
     - brew cask install java
     - brew install n scons android-sdk android-ndk
-    - android update sdk --no-ui --filter 1,3,4,28,105
+    - android update sdk --no-ui --all --filter 1,3,4,28,105
     - echo $JAVA_HOME
     - java -version
     - ls $ANDROID_SDK
