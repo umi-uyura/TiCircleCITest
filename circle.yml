@@ -13,9 +13,9 @@ machine:
 
 dependencies:
   pre:
-    - brew install n scons android-sdk android-ndk
     - brew tap caskroom/cask
     - brew cask install java
+    - brew install n scons android-sdk android-ndk
     - echo $JAVA_HOME
     - java -version
     - ls $ANDROID_SDK
