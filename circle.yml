@@ -1,5 +1,7 @@
 machine:
   timezone: Asia/Tokyo
+  xcode:
+    version: 7.3
   environment:
     XCODE_SCHEME: TiCircleCITest
     XCODE_PROJECT: TiCircleCITest.xcodeproj
@@ -29,7 +31,7 @@ dependencies:
     # - which ndk-build
     - xcodebuild -version
     - n 4.4.5
-    - npm install -g titanium tisdk
+    - npm install -g titanium
     - ti sdk install 5.2.2.GA
 
 test:
