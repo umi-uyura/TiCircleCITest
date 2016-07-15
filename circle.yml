@@ -38,8 +38,8 @@ test:
   override:
     - echo Hello World
     - which node
-    - DEVELOPER_DIR=/Applications/Xcode-7.2.app && xcodebuild -version && sudo xcodebuild -license accept
-    - echo $DEVELOPER_DIR
+    - DEVELOPER_DIR=/Applications/Xcode-7.2.app xcodebuild -version
+    - DEVELOPER_DIR=/Applications/Xcode-7.2.app sudo xcodebuild -license accept
     - xcodebuild -version
     - which ti
     - ti info
