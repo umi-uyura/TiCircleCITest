@@ -1,7 +1,7 @@
 machine:
   timezone: Asia/Tokyo
-  xcode:
-    version: 7.3
+  # xcode:
+  #   version: 7.3
   environment:
     XCODE_SCHEME: TiCircleCITest
     XCODE_PROJECT: TiCircleCITest.xcodeproj
@@ -38,6 +38,9 @@ test:
   override:
     - echo Hello World
     - which node
+    - DEVELOPER_DIR=/Applications/Xcode-7.2.app && sudo xcodebuild -license accept
+    - echo $DEVELOPER_DIR
+    - xcodebuild -version
     - which ti
     - ti info
     - ti build -p ios -b
