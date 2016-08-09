@@ -34,8 +34,8 @@ dependencies:
     - n 4.4.5
     - npm install -g titanium
     - ti sdk install 5.2.2.GA
-    - curl "https://gist.githubusercontent.com/umi-uyura/f6a9449ac8c08c5be07c5d11e087fa9d/raw/392f38dbf123d2aadaeb34a51db8ffe559e24d7d/xcode.js.patch" -o xcode.js.patch
-    - patch -u ~/Library/Application\ Support/Titanium/mobilesdk/osx/5.2.2.GA/node_modules/ioslib/lib/xcode.js < xcode.js.patch
+    # - curl "https://gist.githubusercontent.com/umi-uyura/f6a9449ac8c08c5be07c5d11e087fa9d/raw/392f38dbf123d2aadaeb34a51db8ffe559e24d7d/xcode.js.patch" -o xcode.js.patch
+    # - patch -u ~/Library/Application\ Support/Titanium/mobilesdk/osx/5.2.2.GA/node_modules/ioslib/lib/xcode.js < xcode.js.patch
 
 test:
   override:
